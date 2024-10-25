@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jaaazzzzzzzzz.AlarmPage"
+             Title="Alarm">
+    
+    <ContentPage.BackgroundImageSource>
+        <FileImageSource File="i.png"/>
+    </ContentPage.BackgroundImageSource>
+
+    <Grid>
+        <BoxView Color="Black" Opacity="0.75" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            
+            <Label x:Name="ClockLabel" 
+                   FontSize="48" 
+                   HorizontalOptions="Center" 
+                   TextColor="White"/>
+            
+            <TimePicker x:Name="AlarmTimePicker" 
+                        Time="08:00" 
+                         Format="HH:mm" 
+                        HorizontalOptions="Center"/>
+            
+            <Button Text="Установить будильник" 
+                    Clicked="OnSetAlarmButtonClicked"/>
+
+            <Label x:Name="AlarmStat" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   TextColor="White"/>
+
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

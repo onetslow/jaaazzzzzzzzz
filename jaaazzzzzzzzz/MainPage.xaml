@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jaaazzzzzzzzz.MainPage">
+
+
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Первая цифра 8 -->
+        <Grid x:Name="DigitGrid1" Grid.Column="0" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment1" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment1" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment1" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment1" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment1" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment1" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment1" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+        <!-- Вторая цифра 8 -->
+        <Grid x:Name="DigitGrid2" Grid.Column="1" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment2" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment2" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment2" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment2" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment2" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment2" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment2" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+        <!-- Двоеточие -->
+        <Grid Grid.Column="2" VerticalOptions="Center" Margin="0,-25,10,0">
+            <!-- Увеличение двоеточия и добавление отступов -->
+            <Rectangle Fill="Blue" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+            <Rectangle Fill="Blue" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" Margin="0,50,0,0" />
+            <!-- Отступ между точками -->
+        </Grid>
+
+        <!-- Третья цифра 8 -->
+        <Grid x:Name="DigitGrid3" Grid.Column="3" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment3" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment3" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment3" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment3" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment3" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment3" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment3" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+        <!-- Четвертая цифра 8 -->
+        <Grid x:Name="DigitGrid4" Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment4" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment4" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment4" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment4" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment4" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment4" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment4" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+        <!-- Двоеточие -->
+        <Grid Grid.Column="5" VerticalOptions="Center" Margin="10,-25,10,0">
+            <!-- Увеличение двоеточия и добавление отступов -->
+            <Rectangle Fill="Blue" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+            <Rectangle Fill="Blue" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" Margin="0,50,0,0" />
+            <!-- Отступ между точками -->
+        </Grid>
+        
+        <!-- Пятая цифра -->
+        <Grid x:Name="DigitGrid5" Grid.Column="6" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment5" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment5" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment5" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment5" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment5" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment5" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment5" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+        <!-- Шестая цифра -->
+        <Grid x:Name="DigitGrid6" Grid.Column="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- верхний -->
+            <Image x:Name="TopSegment6" 
+           Grid.Row="0" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх лево -->
+            <Image x:Name="TopLeftSegment6" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- верх право -->
+            <Image x:Name="TopRightSegment6" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- средний -->
+            <Image x:Name="MiddleSegment6" 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ лево -->
+            <Image x:Name="BottomLeftSegment6" 
+           Grid.Row="3" 
+           Grid.Column="0" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- низ право -->
+            <Image x:Name="BottomRightSegment6" 
+           Grid.Row="3" 
+           Grid.Column="2" 
+           Source="vert.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+
+            <!-- нижний -->
+            <Image x:Name="BottomSegment6" 
+           Grid.Row="4" 
+           Grid.Column="0" 
+           Grid.ColumnSpan="3" 
+           Source="top.png" 
+           Aspect="Fill" 
+           HorizontalOptions="Fill" 
+           VerticalOptions="Fill" />
+        </Grid>
+
+    </Grid>
+
+    <!-- Кнопка снизу -->
+    
+</ContentPage>
